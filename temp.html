@@ -5,66 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            font-size: 18px;
-            font-family: "Arial", sans-serif;
-            background: #e7aa6975;
-            
-            
-          }
-          
-          .main {
-            max-width: 720px;
-            margin: 0 auto;
-          }
-          
-          .title {
-            text-align: center;
-          }
-          
-          .document {
-            background-color: #fff;
-            padding: 50px;
-            margin-top: 70px;
-            border-radius: 5px;
-            border-radius: 10px;
-            
-          }
-          
-          input::-webkit-outer-spin-button,
-          input::-webkit-inner-spin-button {
-            -webkit-appearance: none;
-            margin: 0;
-          }
-          
-          .form {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-wrap: wrap;
-          }
-          
-          .label {
-            display: block;
-            margin: 10px;
-          }
-          
-          .field {
-            padding: 5px;
-          }
-          
-          input[type="number"] {
-            padding: 15px 10px;
-            margin: 10px;
-            border-radius: 5px;
-            border: 1px solid #dadada;
-            border: black;
-          }
-          
-    </style>
+    <link rel="stylesheet" href="style.css">
+    
 </head>
 <body>
     <main class="main">
@@ -82,7 +24,8 @@
           </form>
       </main>
       <script>
-        let celsius = document.getElementById("celsius");
+        
+let celsius = document.getElementById("celsius");
 let fahrenheight = document.getElementById("fahrenheight");
 
 const debounce = (func, wait) => {
@@ -118,6 +61,7 @@ fahrenheight.addEventListener(
 const convertToFahrenheight = (celsius) => (Number(celsius) * 9) / 5 + 32;
 const convertToCelsius = (celsius) => ((Number(celsius) - 32) * 5) / 9;
 
+    
       </script>
 </body>
 </html>
